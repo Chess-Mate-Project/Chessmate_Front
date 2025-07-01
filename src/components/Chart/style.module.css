@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chartFrame {
+  width: 940px;
+  height: 574px;
+  border-radius: 8px;
+  background-color: #1c2025;
+}
+
+.chartText {
+    width: 160px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+    padding: 20px
+}
+
+.chart {
+    display: flex;
+    justify-content: flex-start;
+}

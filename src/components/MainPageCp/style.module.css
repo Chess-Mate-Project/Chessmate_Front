@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .mainPageFrame { 현재 tsx에 지정 중
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:
+    linear-gradient(to top, rgba(14, 17, 23, 1), rgba(14, 17, 23, 0.05)),
+    url('/assets/ChessBc.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+} */
+
+.mainPageFrameCt {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainPageTextCt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 2%;
+    color: #fff;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.mainPageText2Ct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ChessLogoCt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ChessLogoText {
+    letter-spacing: 1.2px;
+}
+
+
+
+

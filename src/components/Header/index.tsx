@@ -1,16 +1,18 @@
-import styles from "./Header.module.css";
-import ChessLogo from "../../img/chessLogo.png";
+import styles from "./style.module.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { ChessLogo2 } from "~/assets";
 
 const Header = () => {
+    const [zoom] = useState(0.9);
     return (
         <>
-        <div className={styles.HeaderFrame}>
+        <div className={styles.HeaderFrame} style={{ zoom: zoom }}>
             <div className={styles.headerLeft}>
-                <div className={styles.chessLogoCt}>
-                    <img className={styles.chessLogo} src={ChessLogo} alt="chessLogo" />
-                    <div className={styles.logoText}>Chessmate</div>
-                </div>
+                <Link to="/" className={styles.chessLogoCt}>
+                        <img className={styles.chessLogo} src={ChessLogo2} alt="chessLogo"  />
+                        <div className={styles.logoText}>Chessmate</div>
+                </Link>
                 <div className={styles.linkCt}>
                     <Link className={styles.lanking} to="/">랭킹</Link>
                 </div>

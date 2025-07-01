@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.MainPage2Frame {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+    background-color: #0E1117;
+}
+
+.textFrame {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-left: 8%;
+}
+
+.textCt, .text2Ct, .text3Ct {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.text2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #aaa;
+    width: 600px;
+}
+
+.myPageTo, .LankingTo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 1%;
+    border-radius: 8px;
+    width: 110px;
+    height: 50px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+

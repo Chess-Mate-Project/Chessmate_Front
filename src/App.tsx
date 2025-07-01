@@ -1,10 +1,18 @@
-import { BrowserRouter } from "react-router-dom";
-import AppRouter from "./routes/Router";
+import * as route from './allFiles';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 
-const App = () => (
-  <BrowserRouter>
-    <AppRouter />
-  </BrowserRouter>
-);
+function App() {
+  return (
+    <Router>
+      <route.Header />
+      <Routes>
+        <Route path="/" element={<route.MainPage />} />
+        <Route path="/mypage" element={<route.Mypage />} />
+      </Routes>
+      <route.Footer />
+    </Router>
+  );
+}
 
 export default App;

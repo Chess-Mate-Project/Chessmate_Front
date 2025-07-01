@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.viewLankCt {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 4%;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.viewText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaa;
+}
+
+.rightPrev {
+  font-size: 15px;
+  color: #aaa;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.modalBox {
+  background: #333;
+  border-radius: 3px;
+  width: 650px;
+  height: 679px;
+  text-align: center;
+}
+
+.closeBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.xmark {
+    font-size: 28px;
+    color: #fff;
+}
+
+.modalTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  margin-right: 41%;
+  gap: 250px;
+}
+
+.modalTitleText {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #fff;
+}
+
+.modalLankCt {
+    display: flex;
+    flex-direction: column;
+}
+
+.pawnFrame {
+    display: flex;
+    width: 100%;
+    border: 0.5px solid #ccc;
+    border-left: none;
+    border-right: none;
+    margin-top: 4%;
+}
+
+.knightFrame, .bishopFrame, .rookFrame, .queenFrame, .kingFrame {
+    display: flex;
+    width: 100%;
+    border: 0.5px solid #ccc;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.kingFrame {
+    border-bottom: none;
+}
+
+.chessImg {
+    width: 40px;
+    height: 70px;
+}
+
+.pawnImgFrame, .knightImgFrame, .bishopImgFrame, .rookImgFrame, .queenImgFrame, .kingImgFrame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.LankTextFrame, .LankTextFrame2 {
+    width: 200px;
+    height: 100px;
+    border: 0.5px solid #ccc;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.LankTextFrame2 {
+  height: 103px;
+}
+
+
+
+
+
+
