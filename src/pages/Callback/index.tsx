@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import styles from './style.module.css';
 import axios from 'axios';
 
 const Callback = () => {
@@ -15,7 +16,6 @@ const Callback = () => {
           code,
           code_verifier: codeVerifier,
         });
-        // 토큰 저장 등 처리
         localStorage.setItem('access_token', response.data.access_token);
       } catch (error) {
         console.error('토큰 교환 실패:', error);
@@ -24,7 +24,11 @@ const Callback = () => {
     getToken();
   }, []);
 
-  return <div>로그인 처리 중...</div>;
+  return (
+    <>
+      <div className={styles.loadingText}>로그인 중...</div>
+    </>
+  );
 };
 
 export default Callback;

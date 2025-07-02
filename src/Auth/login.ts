@@ -6,6 +6,7 @@ export async function redirectToLichessLogin() {
 
   const codeVerifier = generateCodeVerifier();
   const codeChallenge = await generateCodeChallenge(codeVerifier);
+  const scope = 'profile:rea emailL:read';
 
   sessionStorage.setItem('code_verifier', codeVerifier);
 
@@ -14,6 +15,7 @@ export async function redirectToLichessLogin() {
     `client_id=${clientId}&` +
     `redirect_uri=${encodeURIComponent(redirectUri)}&` +
     `code_challenge_method=S256&` +
+    `scope=${encodeURIComponent(scope)}&` +
     `code_challenge=${codeChallenge}`;
 
   window.location.href = authUrl;
